@@ -1,0 +1,25 @@
+theme = "sonokai"
+
+[keys.normal]
+C-q = ":buffer-close"
+V = [ "select_mode", "extend_line_below" ]
+C-n = ":buffer-next"
+C-p = ":buffer-previous"
+C-r = { C-r = ":reload" }
+esc = [ "collapse_selection", "keep_primary_selection"]
+C-G = ":set editor.gutters [  ]"
+G = [ "goto_last_line", "goto_line_end" ]
+
+[keys.insert]
+C-l = { C-l = "normal_mode" }
+
+[editor]
+soft-wrap.enable = true
+bufferline="always"
+mouse = false
+gutters = ["diagnostics", "spacer", "line-numbers", "spacer", "diff"]
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
