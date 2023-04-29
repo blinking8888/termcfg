@@ -1,0 +1,21 @@
+[[language]]
+name = "rust"
+auto-format = true
+rulers = [101]
+
+
+[[language]]
+name = "cpp"
+auto-format = false
+rulers = [81]
+
+
+[[language]]
+name = "c"
+auto-format = false
+rulers = [81]
+
+[[language]]
+name = "git-commit"
+auto-format = false
+rulers = [73]
