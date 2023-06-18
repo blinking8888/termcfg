@@ -2,6 +2,7 @@
 vim.opt.backup = false
 vim.opt.writebackup = false
 
+
 -- Having longer updatetime (default is 4000 ms = 4s) leads to noticeable
 -- delays and poor user experience
 vim.opt.updatetime = 300
@@ -183,4 +184,4 @@ keyset("n", "<space>k", ":<C-u>CocPrev<cr>", opts)
 -- Resume latest coc list
 keyset("n", "<space>p", ":<C-u>CocListResume<cr>", opts)
 
-dofile('/home/s2r/.config/nvim/coc/rust.lua')
+require('coc.rust')

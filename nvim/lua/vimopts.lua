@@ -1,0 +1,19 @@
+vim.opt.filetype=off 
+vim.opt.sm = false
+vim.opt.tabstop =4
+vim.opt.showcmd =true
+vim.opt.visualbell=false
+vim.opt.wrap=true
+vim.opt.ignorecase=true
+vim.opt.smartcase=true
+vim.opt.expandtab=true
+vim.opt.expandtab=true
+vim.opt.hlsearch=true
+vim.opt.number=true
+vim.opt.encoding="utf-8"
+vim.opt.fileencoding="utf-8"
+vim.opt.shiftwidth=4
+vim.opt.softtabstop=4
+vim.opt.shiftwidth=4
+vim.opt.ffs=unix
+

@@ -1,0 +1,7 @@
+"languageserver": {
+    "rust": {
+      "command": "/path/to/rust-analyzer",
+      "filetypes": ["rust"],
+      "rootPatterns": ["Cargo.toml"]
+    }
+  }
