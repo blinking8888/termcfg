@@ -1,0 +1,27 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = <yourname>
+	email = yourname@example.com
+[alias]
+	co = checkout
+	cp  = cherry-pick
+	logd = log --decorate
+	logdn = log --decorate --name-only
+	lol = log --pretty="'%C(magenta)%h%Creset%C(cyan)%d%Creset %C(white)%s%Creset%C(yellow) (%ar)%Creset'"
+	missing = lol HEAD..main
+	new = lol main..HEAD
+	stash-keep = stash --keep-index
+	sw = switch
+[core]
+	editor = nvim
+	pager = delta
+[init]
+	defaultBranch = main
+[pull]
+	rebase = true
+[rebase]
+	autoStash = true
+	autoSquash = true
+[rerere]
+	enabled = true
