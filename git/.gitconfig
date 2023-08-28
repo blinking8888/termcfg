@@ -4,6 +4,7 @@
 	name = <yourname>
 	email = yourname@example.com
 [alias]
+	changes = "!git lol `git tracked-remote`..HEAD"
 	co = checkout
 	cp  = cherry-pick
 	logd = log --decorate
@@ -11,8 +12,11 @@
 	lol = log --pretty="'%C(magenta)%h%Creset%C(cyan)%d%Creset %C(white)%s%Creset%C(yellow) (%ar)%Creset'"
 	missing = lol HEAD..main
 	new = lol main..HEAD
+	rg = "!sh -c 'rg -n $1' -" 
 	stash-keep = stash --keep-index
 	sw = switch
+	track = "!f() { git branch --set-upstream-to=$1; }; f"
+	tracked-remote = rev-parse --abbrev-ref --symbolic-full-name @{u}
 [core]
 	editor = nvim
 	pager = delta
