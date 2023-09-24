@@ -11,8 +11,8 @@
 	logdn = log --decorate --name-only
 	lol = log --pretty="'%C(magenta)%h%Creset%C(cyan)%d%Creset %C(white)%s%Creset%C(yellow) (%ar)%Creset'"
 	ln = log -10 --pretty="'%C(magenta)%h%Creset%C(cyan)%d%Creset %C(white)%s%Creset%C(yellow) (%ar)%Creset'"
-	missing = lol HEAD..main
-	new = lol main..HEAD
+	missing = "!git lol HEAD..`git tracked-remote`"
+	new = changes
 	rg = "!sh -c 'rg -n $1' -" 
 	stash-keep = stash --keep-index
 	sw = switch
