@@ -10,6 +10,7 @@
 	logd = log --decorate
 	logdn = log --decorate --name-only
 	lol = log --pretty="'%C(magenta)%h%Creset%C(cyan)%d%Creset %C(white)%s%Creset%C(yellow) (%ar)%Creset'"
+	ln = log -10 --pretty="'%C(magenta)%h%Creset%C(cyan)%d%Creset %C(white)%s%Creset%C(yellow) (%ar)%Creset'"
 	missing = lol HEAD..main
 	new = lol main..HEAD
 	rg = "!sh -c 'rg -n $1' -" 
